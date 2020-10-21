@@ -31,15 +31,15 @@ def merge_dict():
     dict1 = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
     dict2 = {'Thirty': 30, 'Fourty': 40, 'Fifty': 50}
     # add code here
+    dict1.update(dict2)
 
-    dict3 = dict1 + dict2
-    return dict3    # return new dictionary
+    return dict1  # return new dictionary
 
 def access_key():
     # return the value of the key 'Twenty'
     currency = {'Ten': 10, 'Twenty': 20, 'Thirty': 30}
 
-    val = currency.values('Twenty')
+    val = currency['Twenty']
     # add code to assign the desired value to 'val'
     return val
 
